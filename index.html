@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme-mode="dark">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="login">
+            <form id="loginForm" action="login.php" method="POST">
+                <h1 style="font-family:serif; color: #76220b; border:1px solid; width: fit-content; border-radius: 10%;">LOG-IN</h1>
+                <div class="email">
+                    <label>Email</label>
+                    <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
+                </div>
+                <div class="password">
+                    <label>Password</label>
+                    <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Password" required>
+                </div>
+                <button class="button" type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript: Simple Client-Side Validation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const loginForm = document.getElementById('loginForm');
+            loginForm.addEventListener('submit', function(event) {
+                const email = document.getElementById('floatingInput').value.trim();
+                const password = document.getElementById('floatingPassword').value.trim();
+
+                if(email === '' || password === ''){
+                    event.preventDefault(); // Prevent submission
+                    alert('Please fill in both email and password.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

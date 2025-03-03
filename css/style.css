@@ -1,0 +1,57 @@
+body {
+      margin: 0;
+      padding: 0;
+      background-color: bisque; /* nice background */
+      font-family: serif;
+      background-image:url(../download.jpeg);
+      background-size: cover;      /* Ensures the image covers the entire area */
+      background-repeat: no-repeat
+    }
+
+
+
+
+.main{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    height: 100vh;          /* Full viewport height */
+    background-color: hsla(0, 0%, 94%, 0.719);
+    margin: 0;
+    
+    
+    
+}
+.login {
+    position: relative; /* Required for positioning pseudo-element */
+    border: 1px black solid;
+    border-radius: 20%;
+    padding: 10%;
+    background-image: url(../image.jpeg.jpeg);
+    background-size: cover;      /* Ensures the image covers the entire area */
+    background-repeat: no-repeat
+
+}
+    
+
+
+
+.email {
+    padding: 4%;
+    margin-top: 20px;
+    color: #76220b;
+}
+
+.password {
+    margin-top: 20px;
+    color:#76220b;
+}
+.button{
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #76220b;
+    border-radius: 15%;
+    margin-top: 20px;
+    margin-left: 60px;
+    padding: 15px;
+}
